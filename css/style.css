@@ -1,0 +1,100 @@
+/* Header*/
+
+nav.main{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-areas: 'left center right';
+	height: 50px;
+	width: 100%;
+	background:#444;
+}
+
+/* Sections */
+nav.main section.left{
+	grid-area: left;
+	display: flex;
+	flex-direction: row;
+}
+
+nav.main section.center{
+	grid-area: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav.main section.right{
+	grid-area: right;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+/*Buttons*/
+
+nav.main button{
+	border: none;
+	background: inherit;
+}
+
+nav.main button:focus{
+	outline: none;
+}
+
+nav.main button:hover{
+	background-color:rgba(255,255,255,.2);
+	cursor: pointer;
+}
+
+nav.main section.left button{
+	width: 50px;
+	height: 100%;
+}
+
+nav.main section.center button{
+	width: 100%;
+	height: 100%;
+}
+
+nav.main section.right button{
+	display: flex;
+	align-items: center;
+	min-height: 50px;
+	min-width: 50px;
+	max-height: 100%;
+}
+
+nav.main section.right button p{
+	color: #f1f1f1;
+	font-weight: 700;
+	padding:0rem .3rem;
+}
+
+/* END HEADER */
+
+/* Sidebars*/
+aside.left{
+	position: fixed;
+	display: none;
+	background: #fff;
+	top: 50px;
+	left: 0;
+	width: 15%;
+	padding: 1rem 3rem;
+	box-shadow: -9px 0px 12px;
+	border-bottom-right-radius: 5px;
+}
+
+aside.right{
+	position: fixed;
+	display: none;
+	background: #fff;
+	top: 50px;
+	right: 0;
+	width: 15%;
+	padding: 1rem 3rem;
+	box-shadow:9px -2px 12px;
+	border-bottom-left-radius: 2px;
+}
+/* END SIDEBARS*/
