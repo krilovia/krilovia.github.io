@@ -1,0 +1,23 @@
+aside.left{
+	position: fixed;
+	display: none;
+	background: #fff;
+	top: 50px;
+	left: 0;
+	width: 15%;
+	padding: 1rem 3rem;
+	box-shadow: -9px 0px 12px;
+	border-bottom-right-radius: 5px;
+}
+
+aside.right{
+	position: fixed;
+	display: none;
+	background: #fff;
+	top: 50px;
+	right: 0;
+	width: 15%;
+	padding: 1rem 3rem;
+	box-shadow:9px -2px 12px;
+	border-bottom-left-radius: 2px;
+}
